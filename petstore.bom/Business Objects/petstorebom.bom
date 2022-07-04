@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BOMGlobalDataProfile="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0 pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_Dr4J0NYXEeyjfq2CQ4Ldmg" name="com.example.petstorebom">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dr4J0dYXEeyjfq2CQ4Ldmg" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dr4J0tYXEeyjfq2CQ4Ldmg" key="author" value="tsheriff"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dr4J09YXEeyjfq2CQ4Ldmg" key="created" value="1652815506157"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dr4J1NYXEeyjfq2CQ4Ldmg" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HsKvcNYXEeyjfq2CQ4Ldmg" name="Order">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ihq0ENYXEeyjfq2CQ4Ldmg" name="ID" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IhvskdYXEeyjfq2CQ4Ldmg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IhvsktYXEeyjfq2CQ4Ldmg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZBwiQNYXEeyjfq2CQ4Ldmg" name="productCode" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZB0MoNYXEeyjfq2CQ4Ldmg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZB0zsNYXEeyjfq2CQ4Ldmg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_c0vEoNYXEeyjfq2CQ4Ldmg" name="productDesc" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c0yvANYXEeyjfq2CQ4Ldmg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c0yvAdYXEeyjfq2CQ4Ldmg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_e4wx4NYXEeyjfq2CQ4Ldmg" name="qty" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e4zOIdYXEeyjfq2CQ4Ldmg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e4zOItYXEeyjfq2CQ4Ldmg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_K73loNYXEeyjfq2CQ4Ldmg" name="state" type="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8BWoNYXEeyjfq2CQ4Ldmg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8BWodYXEeyjfq2CQ4Ldmg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MdyrYNYXEeyjfq2CQ4Ldmg" name="OrderStatus">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_N-VRENYXEeyjfq2CQ4Ldmg" name="CREATED" classifier="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N-dz8NYXEeyjfq2CQ4Ldmg" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_N-dz8dYXEeyjfq2CQ4Ldmg" value="CREATED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PGJNsNYXEeyjfq2CQ4Ldmg" name="INPROGRESS" classifier="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PGLC4NYXEeyjfq2CQ4Ldmg" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_PGLC4dYXEeyjfq2CQ4Ldmg" value="INPROGRESS"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QhCeYNYXEeyjfq2CQ4Ldmg" name="COMPLETED" classifier="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QhFhsNYXEeyjfq2CQ4Ldmg" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_QhGIwNYXEeyjfq2CQ4Ldmg" value="COMPLETED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D2CLYNYXEeyjfq2CQ4Ldmg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D2Hq8NYXEeyjfq2CQ4Ldmg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ejr7kNYXEeyjfq2CQ4Ldmg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ejr7kdYXEeyjfq2CQ4Ldmg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_Dr7NINYXEeyjfq2CQ4Ldmg" type="Business Object Model" element="_Dr4J0NYXEeyjfq2CQ4Ldmg?com.example.petstorebom?" name="petstorebom.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_DvuvENYXEeyjfq2CQ4Ldmg" type="1007" element="_Dr4J0NYXEeyjfq2CQ4Ldmg?com.example.petstorebom?">
+      <children xmi:type="notation:Node" xmi:id="_DvuvFNYXEeyjfq2CQ4Ldmg" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_DvuvFdYXEeyjfq2CQ4Ldmg" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_DvuvFtYXEeyjfq2CQ4Ldmg" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvF9YXEeyjfq2CQ4Ldmg" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvGNYXEeyjfq2CQ4Ldmg" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvGdYXEeyjfq2CQ4Ldmg" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvGtYXEeyjfq2CQ4Ldmg" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvG9YXEeyjfq2CQ4Ldmg" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvHNYXEeyjfq2CQ4Ldmg" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_DvuvHdYXEeyjfq2CQ4Ldmg" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_DvuvHtYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DvuvH9YXEeyjfq2CQ4Ldmg" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DvuvINYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DvuvIdYXEeyjfq2CQ4Ldmg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_DvuvEdYXEeyjfq2CQ4Ldmg" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_DvuvEtYXEeyjfq2CQ4Ldmg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DvuvE9YXEeyjfq2CQ4Ldmg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Hss68NYXEeyjfq2CQ4Ldmg" type="1002" element="_HsKvcNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder?">
+      <children xmi:type="notation:Node" xmi:id="_HsuJENYXEeyjfq2CQ4Ldmg" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_HsuJEdYXEeyjfq2CQ4Ldmg" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_HsuJEtYXEeyjfq2CQ4Ldmg" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_HsuJE9YXEeyjfq2CQ4Ldmg" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_Ih8g4NYXEeyjfq2CQ4Ldmg" type="2001" element="_Ihq0ENYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Ih8g4dYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZB7hYNYXEeyjfq2CQ4Ldmg" type="2001" element="_ZBwiQNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aproductCode?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ZB7hYdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_c041oNYXEeyjfq2CQ4Ldmg" type="2001" element="_c0vEoNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aproductDesc?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_c041odYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_e44tsNYXEeyjfq2CQ4Ldmg" type="2001" element="_e4wx4NYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aqty?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_e44tsdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_K8OyANYXEeyjfq2CQ4Ldmg" type="2001" element="_K73loNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_K8OyAdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_HsuJFNYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HsuJFdYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HsuJFtYXEeyjfq2CQ4Ldmg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_HsuJF9YXEeyjfq2CQ4Ldmg" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_HsuJGNYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_HsuJGdYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_HsuJGtYXEeyjfq2CQ4Ldmg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_Hss68dYXEeyjfq2CQ4Ldmg" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_Hss68tYXEeyjfq2CQ4Ldmg" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hss689YXEeyjfq2CQ4Ldmg" x="605" y="285" width="282" height="222"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_MeMUANYXEeyjfq2CQ4Ldmg" type="1004" element="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?">
+      <children xmi:type="notation:Node" xmi:id="_MeNiINYXEeyjfq2CQ4Ldmg" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_MeNiIdYXEeyjfq2CQ4Ldmg" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_MeOJMNYXEeyjfq2CQ4Ldmg" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_MeOJMdYXEeyjfq2CQ4Ldmg" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_N-fpINYXEeyjfq2CQ4Ldmg" type="2003" element="_N-VRENYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aCREATED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_N-fpIdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PGMRANYXEeyjfq2CQ4Ldmg" type="2003" element="_PGJNsNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aINPROGRESS?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_PGMRAdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QhJzINYXEeyjfq2CQ4Ldmg" type="2003" element="_QhCeYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aCOMPLETED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QhJzIdYXEeyjfq2CQ4Ldmg"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_MeOJMtYXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_MeOJM9YXEeyjfq2CQ4Ldmg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_MeOJNNYXEeyjfq2CQ4Ldmg"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_MeMUAdYXEeyjfq2CQ4Ldmg" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_MeMUAtYXEeyjfq2CQ4Ldmg" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MeMUA9YXEeyjfq2CQ4Ldmg" x="1003" y="389"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Dr7NIdYXEeyjfq2CQ4Ldmg"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Dr7NItYXEeyjfq2CQ4Ldmg"/>
+  </notation:Diagram>
+  <BOMGlobalDataProfile:Case xmi:id="_HsTSUNYXEeyjfq2CQ4Ldmg" base_Class="_HsKvcNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder?" summaryAttributes=""/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_HsVukNYXEeyjfq2CQ4Ldmg" displayLabel="Order" base_NamedElement="_HsKvcNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder?"/>
+  <BOMGlobalDataProfile:AutoCaseIdentifier xmi:id="_Ihq0EdYXEeyjfq2CQ4Ldmg" base_Property="_Ihq0ENYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_IhvskNYXEeyjfq2CQ4Ldmg" displayLabel="ID" base_NamedElement="_Ihq0ENYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aID?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_K7_hcNYXEeyjfq2CQ4Ldmg" base_Property="_K73loNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3astate?" terminalStates="_QhCeYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aCOMPLETED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_K8AIgNYXEeyjfq2CQ4Ldmg" displayLabel="State" base_NamedElement="_K73loNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3astate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Md1HoNYXEeyjfq2CQ4Ldmg" displayLabel="OrderStatus" base_NamedElement="_MdyrYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_N-XtUNYXEeyjfq2CQ4Ldmg" displayLabel="CREATED" base_NamedElement="_N-VRENYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aCREATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_PGKb0NYXEeyjfq2CQ4Ldmg" displayLabel="INPROGRESS" base_NamedElement="_PGJNsNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aINPROGRESS?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QhE6oNYXEeyjfq2CQ4Ldmg" displayLabel="COMPLETED" base_NamedElement="_QhCeYNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrderStatus%3a%3aCOMPLETED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_ZBzlkNYXEeyjfq2CQ4Ldmg" displayLabel="ProductCode" base_NamedElement="_ZBwiQNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aproductCode?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_c0yH8NYXEeyjfq2CQ4Ldmg" displayLabel="ProductDesc" base_NamedElement="_c0vEoNYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aproductDesc?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_e4zOINYXEeyjfq2CQ4Ldmg" displayLabel="Qty" base_NamedElement="_e4wx4NYXEeyjfq2CQ4Ldmg?com.example.petstorebom%3a%3aOrder%3a%3aqty?"/>
+</xmi:XMI>
